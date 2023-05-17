@@ -1,0 +1,213 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #ecebeb;
+    color: #fdfcfc;
+}
+
+body.mode-dark {
+    background-color: #343434;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 22px;
+    border-radius: 15px;
+    background-color: #d40505;
+    width: 100%;
+}
+
+header .logo,
+header .img-button {
+    width: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+header #button-change-theme {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .img-button:hover {
+    transform: scale(1.35);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .list-pokemon {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .poke-card{
+    background-color: #d40505;
+	height: 320px;
+    width: 200px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 15px;
+	transition: 0.2s ease-in-out;
+}
+
+.mode-dark .poke-card{
+    background-color: #d40505;
+}
+
+main .poke-card:hover{
+    background-color: rgb(245, 184, 0);
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.mode-dark .poke-card:hover{
+    background-color: rgb(245, 184, 0);
+}
+
+main .poke-card .info {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid ;
+    border-radius: 7px;
+}
+
+main .poke-card .info span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .poke-card .gif{
+    width: 50px;
+    height: 50px;
+}
+
+main .poke-card .type-pokemon{
+    display: flex;
+    gap: 3px;
+    padding: 5px;
+}
+
+main .poke-card .type-gram{
+    background: url(../imagens/bg-gram.jpg);
+    width: 75px;
+    text-align: center;
+    border-radius: 7px;
+    color: #FFF;
+}
+
+main .poke-card .type-poison{
+    background: url(../imagens/bg-poison.png);
+    width: 75px;
+    text-align: center;
+    border-radius: 7px;
+    color: #FFF;
+}
+
+main .poke-card .type-poison_2{
+    background: url(../imagens/bg-poison.png);
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #FFF;
+}
+
+main .poke-card .type-fire{
+    background: url(../imagens/bg-fire.jpeg);
+    background-position: 0% 80%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #FFF;
+}
+
+main .poke-card .type-water{
+    background: url(../imagens/bg-water.jpg);
+    background-position: 0% 80%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #FFF;
+}
+
+main .poke-card .type-bug{
+    background: url(../imagens/bg-leaf.jpg);
+    background-position: bottom;
+    background-position: 0% 80%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #FFF;
+}
+
+main .poke-card .type-flying{
+    background: url(../imagens/bg-sky.jpeg);
+    background-position: 0% 60%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #043cf5;
+}
+
+main .poke-card .type-normal{
+    background: url(../imagens/bg-none.jpeg);
+    background-position: 50% 30%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #fff;
+}
+
+main .poke-card .type-eletric{
+    background: url(../imagens/bg-eletric.jpg);
+    background-position: 50% 50%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #fff;
+}
+
+main .poke-card .type-sand{
+    background: url(../imagens/bg-sand.jpg);
+    background-position: 40% 80%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #fff;
+}
+
+main .poke-card .type-fairy{
+    background: url(../imagens/bg-magic.jpeg);
+    background-position: 40% 50%;
+    width: 150px;
+    text-align: center;
+    border-radius: 7px;
+    color: #fff;
+}
+
+main .description{
+    max-height: 110px;
+    overflow-y: auto;
+    font-size: 14px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: #d40505;
+    margin-top: 25px;
+    
+}
